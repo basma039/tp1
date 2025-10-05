@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+          body {
+      font-family: "Segoe UI", Arial, sans-serif;
+      background: #f5f6fa;
+      color: #333;
+      margin: 0;
+      padding: 20px;
+    }
+
+    h2 {
+      text-align: center;
+      color: #273c75;
+    }
+
+    table {
+      border-collapse: collapse;
+      width: 90%;
+      margin: 30px auto;
+      background-color: #fff;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+
+    th, td {
+      padding: 12px;
+      text-align: center;
+      border-bottom: 1px solid #ddd;
+    }
+
+    th {
+      background-color: #40739e !important;
+      background-color: black;
+      color: white;
+    }
+
+    tr:hover {
+      background-color: #f1f2f6;
+    }
+
+    button {
+      margin: 3px;
+      padding: 6px 12px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: 600;
+      transition: 0.2s;
+    }
+
+    button:hover {
+      opacity: 0.8;
+    }
+
+    .btn-salaire { background-color: #44bd32; color: white; }
+    .btn-supprimer { background-color: #e84118; color: white; }
+    .btn-cloner { background-color: #0097e6; color: white; }
+    .btn-simplifier { background-color: #8c7ae6; color: white; }
+    </style>
+</head>
+<body>
+    <p>les salaire des employées sont affichées dans la console</p>
+    
+    <table id="table_emp">
+    <thead>
+      <tr>
+        <th>Nom</th>
+        <th>Prénom</th>
+        <th>Sexe</th>
+        <th>Enfants</th>
+        <th>Salaire Brut</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+      <script src="javascript.js"></script>
+
+<h1 onclick="showHxContent(1)">Partie 1</h1>
+<div id="title1" style="display: none;">
+    <p>Mon premier paragraphe</p>
+    <p>Mon deuxième paragraphe</p>
+</div>
+<h1 onclick="showHxContent(2)">Partie 2</h1>
+<div id="title2" style="display: none;">
+    <p>Mon premier paragraphe</p>
+    <p>Mon deuxième paragraphe</p>
+    <p>
+    <input type="submit" value="Masquer" onclick="hideAllDivs()">
+    </p>
+
+    <p>Title N° : <input type="text" id="title"> 
+    <input type="submit" value="Afficher" onclick="alertTitle()">
+    </p>
+
+</div>
+</body>
+</html>
